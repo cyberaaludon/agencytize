@@ -1,141 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#fbf8f1">
-  <meta name="description" content="AgencyTize connects brands with relevant creators through influencer campaigns, creator partnerships, and UGC content.">
-  <meta property="og:title" content="AgencyTize — Brands × Creators × Real Impact">
-  <meta property="og:description" content="Creator marketing built around meaningful partnerships.">
-  <meta property="og:type" content="website">
-  <title>AgencyTize — Brands × Creators × Real Impact</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="AgencyTize connects ambitious brands with the right creators through influencer marketing, creator partnerships and UGC campaigns.">
+  <title>AgencyTize — Where Brands Meet Creators</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="announcement"><span class="pulse"></span> CREATOR MARKETING · BUILT ON COLLABORATION</div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="AgencyTize home">
-      <span class="brand-mark"><span>A</span></span>
-      <span class="brand-name">Agency<span>Tize</span><small>CREATOR MARKETING</small></span>
+  <div class="page-progress" aria-hidden="true"><span id="progressBar"></span></div>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="AgencyTize home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><b></b></span>
+      <span class="brand-name">agency<span>tize</span><small>CREATOR PARTNERSHIPS</small></span>
     </a>
-    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-    <nav class="nav" id="nav">
-      <a href="#about">About</a><a href="#services">Services</a><a href="#process">Our Process</a><a href="#industries">Industries</a><a href="#contact" class="nav-cta">Let's collaborate <span>↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav" id="mainNav">
+      <a href="#about">About</a><a href="#services">Services</a><a href="#process">Our process</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Let’s talk <span>↗</span></a>
     </nav>
   </header>
 
   <main>
-    <section class="hero section-wrap" id="home">
+    <section class="hero section-shell">
       <div class="hero-copy">
-        <p class="eyebrow"><span>BRANDS</span> × <span>CREATORS</span> × <span>REAL IMPACT</span></p>
-        <h1>Connecting<br>Brands With<br><em>Creators.</em></h1>
-        <p class="hero-description">We help brands discover relevant creators, build meaningful partnerships, and create content that moves people to action.</p>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> INFLUENCE, WITH INTENTION</div>
+        <h1>Make your brand<br>part of the <em>conversation.</em></h1>
+        <p class="hero-text">We connect brands with creators who move people — building thoughtful partnerships, compelling content, and campaigns made to matter.</p>
         <div class="hero-actions">
-          <a class="button button-primary" href="#contact">Work with us <span>↗</span></a>
-          <a class="button button-quiet" href="#services">Explore services</a>
+          <a class="button button-primary" href="#contact">Start a conversation <span>↗</span></a>
+          <a class="text-link" href="#services">Explore what we do <span>↓</span></a>
         </div>
-        <div class="hero-proof">
-          <div><span class="proof-icon">↗</span><span><b>Strategy-led</b><small>Clear campaign goals</small></span></div>
-          <div><span class="proof-icon">◎</span><span><b>Creator-focused</b><small>Relevant partnerships</small></span></div>
-          <div><span class="proof-icon">✳</span><span><b>Impact-minded</b><small>Results you can track</small></span></div>
+        <div class="hero-note"><span class="note-line"></span><span>BRANDS × CREATORS × CULTURE</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Abstract three-dimensional camera lens artwork">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <div class="art-glow"></div>
+        <div class="floating-tag tag-top"><span class="tag-dot"></span> CREATIVE THAT CONNECTS</div>
+        <div class="camera-object" id="cameraObject">
+          <div class="camera-body">
+            <div class="camera-top"></div>
+            <div class="camera-flash"></div>
+            <div class="camera-viewfinder"></div>
+            <div class="camera-lens-outer">
+              <div class="lens-ring ring-a"></div><div class="lens-ring ring-b"></div>
+              <div class="lens-glass"><span></span></div>
+            </div>
+            <div class="camera-detail"></div>
+          </div>
+          <div class="camera-shadow"></div>
         </div>
+        <div class="floating-tag tag-bottom"><span class="tag-star">✳</span> THE RIGHT PEOPLE. THE RIGHT STORY.</div>
+        <div class="art-index">AT / 001</div>
       </div>
-      <div class="hero-visual">
-        <div class="visual-orb"></div>
-        <div class="photo photo-main"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=85" alt="Content creator portrait"></div>
-        <div class="photo photo-small photo-one"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=500&q=80" alt="Creator portrait"></div>
-        <div class="photo photo-small photo-two"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" alt="Creator portrait"></div>
-        <div class="floating-card views"><span class="mini-label">CAMPAIGN INSIGHT</span><strong>Content that connects</strong><small>Creative + audience fit</small><div class="bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
-        <div class="floating-card heart"><span>♥</span><div><b>Real people.</b><small>Meaningful stories.</small></div></div>
-        <div class="round-stamp">CREATORS<br>MAKE IT<br><b>MATTER</b> ↗</div>
-      </div>
+      <div class="hero-bottom"><span>INDEPENDENT CREATOR MARKETING AGENCY</span><a href="#about">SCROLL TO DISCOVER <span>↓</span></a></div>
     </section>
 
-    <section class="trust-strip">
-      <p>BUILT FOR BRANDS THAT WANT TO CONNECT</p>
-      <div class="trust-words"><span>BEAUTY</span><span>TECH & SaaS</span><span>FASHION</span><span>LIFESTYLE</span><span>WELLNESS</span></div>
-      <small>Industry examples — not a client or partner list.</small>
-    </section>
-
-    <section class="section section-wrap" id="about">
-      <div class="section-heading">
-        <p class="eyebrow">A MORE HUMAN KIND OF MARKETING</p>
-        <h2>Good partnerships.<br><em>Better stories.</em></h2>
-      </div>
-      <div class="about-content">
-        <p class="large-copy">AgencyTize is a creator marketing agency built to bring brands and creators together with clarity, care, and a shared goal.</p>
-        <p>From finding the right voices to coordinating campaign delivery, we focus on making collaborations straightforward, relevant, and useful for everyone involved.</p>
-        <a class="text-link" href="#contact">Tell us what you're building <span>↗</span></a>
-      </div>
-    </section>
-
-    <section class="section services-section" id="services">
-      <div class="section-wrap">
-        <div class="section-topline"><p class="eyebrow">WHAT WE DO</p><span class="topline-note">THOUGHTFUL FROM START TO FINISH</span></div>
-        <div class="services-intro"><h2>Creator marketing,<br><em>made practical.</em></h2><p>Flexible support for brands looking to find their people and tell their story through creators.</p></div>
-        <div class="service-grid">
-          <article class="service-card">
-            <div class="service-icon">↗</div><span class="card-number">01 / CAMPAIGNS</span>
-            <h3>Influencer<br>Marketing</h3>
-            <p>Campaign planning and creator coordination designed around your goals, audience, and budget.</p>
-            <ul><li>Campaign briefs</li><li>Creator shortlisting</li><li>Coordination & reporting</li></ul>
-          </article>
-          <article class="service-card service-featured">
-            <div class="service-icon">◎</div><span class="card-number">02 / PARTNERSHIPS</span>
-            <h3>Creator<br>Partnerships</h3>
-            <p>Find relevant voices and build authentic collaborations that make sense for your brand.</p>
-            <ul><li>Niche and profile research</li><li>Outreach coordination</li><li>Deal and deliverable tracking</li></ul>
-          </article>
-          <article class="service-card">
-            <div class="service-icon">▷</div><span class="card-number">03 / CONTENT</span>
-            <h3>UGC<br>Campaigns</h3>
-            <p>Creator-style content concepts and coordination for social channels and advertising creative.</p>
-            <ul><li>Creative direction</li><li>Creator coordination</li><li>Review and usage-rights support</li></ul>
-          </article>
-        </div>
-        <p class="service-note">Every project is scoped to your needs. Specific deliverables, creator fees, usage rights, and timelines are agreed before work begins.</p>
-      </div>
-    </section>
-
-    <section class="process-band" id="process">
-      <div class="section-wrap process-layout">
-        <div><p class="eyebrow">OUR PROCESS</p><h2>Clear steps.<br><em>Shared momentum.</em></h2><p>Simple communication, transparent expectations, and a clear plan at every stage.</p></div>
-        <div class="process-steps">
-          <div class="process-step"><span>01</span><b>Understand</b><small>Your goals</small></div>
-          <div class="step-arrow">→</div>
-          <div class="process-step"><span>02</span><b>Find</b><small>Relevant creators</small></div>
-          <div class="step-arrow">→</div>
-          <div class="process-step"><span>03</span><b>Coordinate</b><small>Content & delivery</small></div>
-          <div class="step-arrow">→</div>
-          <div class="process-step"><span>04</span><b>Review</b><small>Learn & improve</small></div>
+    <section class="intro section-shell reveal" id="about">
+      <div class="section-label"><span>01</span> / A LITTLE ABOUT US</div>
+      <div class="intro-content">
+        <h2>Good marketing<br>feels <em>human.</em></h2>
+        <div class="intro-right">
+          <p class="large-copy">Attention is easy to chase. Trust is worth building.</p>
+          <p>AgencyTize brings brands and creators together around shared values, relevant audiences, and ideas people actually want to spend time with. No noise for the sake of noise — just considered collaborations with a clear purpose.</p>
+          <a class="underlined-link" href="#contact">Get to know us <span>↗</span></a>
         </div>
       </div>
-    </section>
-
-    <section class="section section-wrap industries-section" id="industries">
-      <div class="industries-copy"><p class="eyebrow">WHO WE WORK WITH</p><h2>Different niches.<br><em>Shared ambition.</em></h2><p>We explore creator partnerships across categories, based on campaign fit, audience, and availability.</p><a class="text-link" href="#contact">Discuss your niche <span>↗</span></a></div>
-      <div class="industry-grid">
-        <div><span>✳</span><b>Beauty & Skincare</b></div><div><span>◈</span><b>Fashion & Lifestyle</b></div><div><span>⌁</span><b>Fitness & Wellness</b></div><div><span>▣</span><b>Tech & SaaS</b></div><div><span>✦</span><b>Food & Beverage</b></div><div><span>＋</span><b>And more</b></div>
+      <div class="values-strip">
+        <div><span class="value-number">01</span><strong>Authenticity first</strong><small>Real voices. Relevant stories.</small></div>
+        <div><span class="value-number">02</span><strong>Thoughtful matching</strong><small>The right fit beats the biggest number.</small></div>
+        <div><span class="value-number">03</span><strong>Built to collaborate</strong><small>Better work, made together.</small></div>
       </div>
     </section>
 
-    <section class="collab section-wrap" id="contact">
-      <div class="collab-decoration">LET'S MAKE<br>GOOD THINGS<br><em>HAPPEN.</em></div>
-      <div class="collab-content"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's build something<br><em>meaningful together.</em></h2><p>Are you a brand exploring creator marketing, or a creator open to relevant collaborations? We'd love to hear from you.</p>
-        <div class="contact-actions"><a class="button button-primary" href="mailto:agencytize.business@gmail.com?subject=AgencyTize%20Collaboration%20Inquiry">Start a conversation <span>↗</span></a><a class="email-link" href="mailto:agencytize.business@gmail.com">agencytize.business@gmail.com</a></div>
+    <section class="services section-shell" id="services">
+      <div class="section-heading reveal">
+        <div class="section-label"><span>02</span> / WHAT WE DO</div>
+        <div><h2>From first idea<br>to <em>real impact.</em></h2><p>Flexible creator marketing, shaped around your goals.</p></div>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="service-top"><span>01 / CAMPAIGNS</span><span class="service-icon icon-spark">✳</span></div>
+          <div class="line-art campaign-art"><span class="orbit"></span><span class="orbit"></span><i>✳</i></div>
+          <h3>Influencer campaigns</h3>
+          <p>From creator discovery to campaign coordination, we help turn your brief into a collaboration that feels natural and memorable.</p>
+          <a href="#contact" aria-label="Ask about influencer campaigns">Discuss a campaign <span>↗</span></a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top"><span>02 / CONNECTIONS</span><span class="service-icon icon-link">↗</span></div>
+          <div class="line-art people-art"><span class="person p1"></span><span class="person p2"></span><span class="person p3"></span><i></i></div>
+          <h3>Creator partnerships</h3>
+          <p>We help brands find creators whose style, community, and values align — for partnerships built on a better fit.</p>
+          <a href="#contact" aria-label="Ask about creator partnerships">Find your people <span>↗</span></a>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-top"><span>03 / CONTENT</span><span class="service-icon icon-play">▶</span></div>
+          <div class="line-art content-art"><div class="phone-shape"><span></span><i>▶</i></div><b></b><b></b></div>
+          <h3>UGC & content</h3>
+          <p>Creator-led content with a point of view — made to introduce, explain, demonstrate, and bring your brand closer to people.</p>
+          <a href="#contact" aria-label="Ask about UGC and content">Create something <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-inner section-shell reveal">
+        <div class="manifesto-mark">“</div>
+        <p>People don’t connect with<br>brands. They connect with<br><em>what brands make them feel.</em></p>
+        <div class="manifesto-bottom"><span>OUR POINT OF VIEW</span><span class="manifesto-line"></span><span>AGENCYTIZE®</span></div>
+      </div>
+      <div class="manifesto-orb orb-a"></div><div class="manifesto-orb orb-b"></div>
+    </section>
+
+    <section class="process section-shell" id="process">
+      <div class="section-heading reveal">
+        <div class="section-label"><span>03</span> / HOW WE WORK</div>
+        <div><h2>Clear thinking.<br><em>Good work.</em></h2><p>A simple process that keeps the focus on the outcome.</p></div>
+      </div>
+      <div class="process-list">
+        <article class="process-step reveal"><span class="step-num">01</span><div><h3>Listen & understand</h3><p>We start with your goals, audience, brief, and what success should look like.</p></div><span class="step-symbol">↘</span></article>
+        <article class="process-step reveal"><span class="step-num">02</span><div><h3>Find the right fit</h3><p>We shortlist creators and ideas based on relevance, style, and campaign needs.</p></div><span class="step-symbol">⌕</span></article>
+        <article class="process-step reveal"><span class="step-num">03</span><div><h3>Bring it to life</h3><p>We coordinate the collaboration and keep communication moving clearly.</p></div><span class="step-symbol">✳</span></article>
+        <article class="process-step reveal"><span class="step-num">04</span><div><h3>Learn & grow</h3><p>We review the work, capture learnings, and identify what to build on next.</p></div><span class="step-symbol">↗</span></article>
+      </div>
+    </section>
+
+    <section class="fit section-shell reveal">
+      <div class="fit-copy"><div class="section-label"><span>04</span> / WHO WE WORK WITH</div><h2>For brands with<br>something <em>to say.</em></h2><p>Whether you’re building awareness, launching something new, or looking for fresh creative, we help you find the people and stories that fit.</p></div>
+      <div class="fit-tags"><span>Beauty & skincare</span><span>Fashion & lifestyle</span><span>Food & beverage</span><span>Technology</span><span>Travel & hospitality</span><span>Emerging brands</span><span>And more, with the right fit</span></div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-left"><div class="section-label"><span>05</span> / YOUR NEXT CHAPTER</div><h2>Have a good<br>idea? Let’s <em>make it real.</em></h2><p>Tell us what you’re building. We’ll take it from there, one thoughtful conversation at a time.</p><a class="button button-dark" href="mailto:agencytize.business@gmail.com?subject=Let%27s%20work%20together%20%7C%20AgencyTize">Start a conversation <span>↗</span></a></div>
+        <div class="contact-art"><div class="contact-disc disc-1"></div><div class="contact-disc disc-2"></div><div class="contact-disc disc-3"></div><div class="contact-spark">✳</div><span>LET’S MAKE<br>IT MATTER.</span></div>
       </div>
     </section>
   </main>
 
-  <footer class="footer section-wrap">
-    <a class="brand footer-brand" href="#home"><span class="brand-mark"><span>A</span></span><span class="brand-name">Agency<span>Tize</span><small>CREATOR MARKETING</small></span></a>
-    <p>Brands × Creators × Real Impact.</p>
-    <div><a href="#services">Services</a><a href="#contact">Contact</a><a href="mailto:agencytize.business@gmail.com">Email us</a></div>
-    <small>© <span id="year"></span> AgencyTize. All rights reserved.</small>
+  <footer class="footer section-shell">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><b></b></span><span class="brand-name">agency<span>tize</span><small>CREATOR PARTNERSHIPS</small></span></a>
+    <div class="footer-mid"><span>Independent by nature. Collaborative by design.</span><a href="mailto:agencytize.business@gmail.com">agencytize.business@gmail.com</a></div>
+    <div class="footer-right"><span>© <span id="year"></span> AGENCYTIZE</span><a href="#top">BACK TO TOP ↑</a></div>
   </footer>
-  <script src="script.js"></script>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 </body>
 </html>
